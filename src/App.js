@@ -23,28 +23,28 @@ class App extends Component{
 				<fieldset>
     				<legend>Complete if applies to person or entity:</legend>
     				<label>Role</label>
-        			<input type="text" name="Role" value={props.data.Role} /><br />
+        			<input type="text" name="Role" value="" /><br />
         			<label>Occupation</label>
-        			<input type="text" name="Occupation" value={props.data.Occupation} /><br />
+        			<input type="text" name="Occupation" value="" /><br />
         			<label>Town</label>
-        			<input type="text" name="Town" value={props.data.Town} /><br />
+        			<input type="text" name="Town" value="" /><br />
         			<label>City</label>
-        			<input type="text" name="City" value={props.data.City} /><br />
+        			<input type="text" name="City" value="" /><br />
         			<label>County</label>
-        			<input type="text" name="County" value={props.data.County} /><br />
+        			<input type="text" name="County" value="" /><br />
         			<label>State</label>
-        			<input type="text" name="State" value={props.data.State} /><br />
+        			<input type="text" name="State" value="" /><br />
         			<label>Nation</label>
-        			<input type="text" name="Nation" value={props.data.Nation} /><br />
+        			<input type="text" name="Nation" value="" /><br />
         			<label>Community</label>
-        			<input type="text" name="Community" value={props.data.Community} /><br />
+        			<input type="text" name="Community" value="" /><br />
         			<label>Organization</label>
-        			<input type="text" name="Organization" value={props.data.Organization} /><br />
+        			<input type="text" name="Organization" value="" /><br />
     			</fieldset>	
     			<fieldset>
     				<legend>Product for challenge:</legend>
     				<label>Product</label>
-        			<input type="text" name="Product" value={props.data.Product} /><br />
+        			<input type="text" name="Product" value="" /><br />
         		</fieldset>	
 				<FramingWords doRandom={this.state.doRandom}/>
 				<form>
