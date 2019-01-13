@@ -21,7 +21,7 @@ class App extends Component{
 		return(
 			<div>
 				<fieldset>
-    				<legend>Complete if applies to person or entity:</legend>
+    				<legend>Complete if applies to person or entity</legend>
     				<label>Role</label>
         			<input type="text" name="Role" value="" /><br />
         			<label>Occupation</label>
