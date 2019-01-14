@@ -4,12 +4,12 @@ function FramingWords(props){
 	
 	const framers = ['How can', 'How do', 'Should', 'Could', 'What'];
 	const ran = Math.floor(Math.random() * 5);
-	let current = framers[ran];
+	let current = props.doRandom ? framers[ran] : '';
+	
 	return(
-		<section>
-			<p>Framing Words</p>
-			<div>{current}</div>
-		</section>
+		<div className="stem framing">
+			{current}
+		</div>
 	)
 }
 
