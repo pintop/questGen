@@ -4,6 +4,7 @@ import Who from './Who';
 import FormComponent from './FormComponent';
 import Challenge from './Challenge';
 import Audience from './Audience';
+import Product from './Product';
 
 class App extends Component{
 	constructor(){
@@ -88,11 +89,10 @@ class App extends Component{
 					/>
 					<Challenge
 						doRandom={this.state.doRandom}
-						data={this.state.product} 
 					/>
-					<div className="stem product">
-						{this.state.product}
-					</div>
+					<Product
+						data={this.state.product}
+					/>
 					<Audience 
 						doRandom={this.state.doRandom}
 					/>

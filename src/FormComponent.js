@@ -5,7 +5,7 @@ import React from 'react';
 function FormComponent(props){
 	return(
 		<form>
-			<fieldset class="entity">
+			<fieldset className="entity">
 				<legend>Complete if applies to person or entity</legend>
 				<div><label>Role</label>
     			<input type="text" name="role" value={props.data.role} onChange={props.handleChange} /></div>
