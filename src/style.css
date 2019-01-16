@@ -9,16 +9,30 @@ body {
 }
 
 main{
-	width:600px;	
-  	max-width: 90%; 
-  	margin: 0 auto;
-  	padding: 20px;
-  
-}
-section{
-	display: flex;
+  display: flex;
+  margin: 0 auto;
+  padding: 20px;
   flex-wrap: wrap;
   justify-content:center;
+}
+
+section{
+  display: flex;
+	flex-wrap: wrap;
+  justify-content:center;
+  flex-direction: row;
+}
+
+label{
+  display: inline-block;
+  width: 150px;
+}
+.entity{
+
+}
+fieldset label:nth-child(odd){
+ 
+
 }
 
 .stem{
@@ -26,7 +40,7 @@ section{
 	padding: 10px;
 	margin: 10px;
 	justify-content:space-around;
-	border: 1px solid #cfcfcf;
+	/*border: 1px solid #cfcfcf;*/
 }
 
 button{
