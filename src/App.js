@@ -49,7 +49,7 @@ class App extends Component{
 		const {name, value} = event.target;
 		this.setState(prevState=>{
 			return{
-				doRandom: true,
+				doRandom: false,
 				role: prevState.role,
 				occupation: prevState.occupation,
 				town: prevState.town,
