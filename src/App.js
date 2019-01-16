@@ -3,6 +3,7 @@ import FramingWords from './FramingWords';
 import Who from './Who';
 import FormComponent from './FormComponent';
 import Challenge from './Challenge';
+import Audience from './Audience';
 
 class App extends Component{
 	constructor(){
@@ -26,15 +27,43 @@ class App extends Component{
 
 	handleSubmit(event){
 		event.preventDefault();
-		this.setState({doRandom:true})
+		this.setState(prevState =>{
+			return{
+				doRandom: true,
+				role: prevState.role,
+				occupation: prevState.occupation,
+				town: prevState.town,
+				city: prevState.city,
+				county: prevState.county,
+				thestate: prevState.thestate,
+				nation: prevState.nation,
+				community: prevState.community,
+				organization: prevState.organization,
+				product: prevState.product	
+			}
+		})
 	}
 
 	handleChange(event){
 		event.preventDefault();
 		const {name, value} = event.target;
-		this.setState({
-			doRandom: false,
-			[name]: value
+		this.setState(prevState=>{
+			return{
+				doRandom: true,
+				role: prevState.role,
+				occupation: prevState.occupation,
+				town: prevState.town,
+				city: prevState.city,
+				county: prevState.county,
+				thestate: prevState.thestate,
+				nation: prevState.nation,
+				community: prevState.community,
+				organization: prevState.organization,
+				product: prevState.product,
+				[name]: value		
+			}
+			
+			
 		})
 	}
 
@@ -60,6 +89,12 @@ class App extends Component{
 					<Challenge
 						doRandom={this.state.doRandom}
 						data={this.state.product} 
+					/>
+					<div className="stem product">
+						{this.state.product}
+					</div>
+					<Audience 
+						doRandom={this.state.doRandom}
 					/>
 				</section>
 			</div>

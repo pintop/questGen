@@ -28,3 +28,10 @@ section{
 	justify-content:space-around;
 	border: 1px solid #cfcfcf;
 }
+
+button{
+  margin-top: 10px;
+  border: none;
+  padding: 10px;
+  width: 100%;
+}
