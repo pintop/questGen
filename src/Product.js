@@ -1,12 +1,15 @@
 import React from 'react';
 
 function Product(props){
-	console.log(props.data);
-	return(
+	let current = props.data ? (
 		<div className="stem product">
 			{props.data}
 		</div>
-	)
+		):(
+			null
+		)
+
+	return(current)
 }
 
 export default Product;
